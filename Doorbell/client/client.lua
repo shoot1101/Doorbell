@@ -5,9 +5,9 @@ ESX = exports["es_extended"]:getSharedObject()
 local zeit = 0
 local soundid = GetSoundId()
 
-Citizen.CreateThread(function()
+CreateThread(function()
     while true do 
-        Citizen.Wait(0)
+        Wait(0)
         for __, s in ipairs(Config.Bells) do
             local coords = GetEntityCoords(PlayerPedId())
             if(GetDistanceBetweenCoords(coords, s.coords.x, s.coords.y, s.coords.z, true) < Config.DrawDistance) then
@@ -20,7 +20,7 @@ Citizen.CreateThread(function()
 end)
 
 
-Citizen.CreateThread(function()
+CreateThread(function()
 
     for __, s in ipairs(Config.Bells) do
 
@@ -65,7 +65,7 @@ end)
 RegisterNetEvent("es_doorbell:startwaittime")
 AddEventHandler("es_doorbell:startwaittime", function()
     while zeit >= 0 do
-        Citizen.Wait(1000)
+        Wait(1000)
         zeit = zeit - 1
     end
 end)
