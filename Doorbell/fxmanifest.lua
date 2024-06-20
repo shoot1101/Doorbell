@@ -4,7 +4,7 @@ lua54 'yes'
 
 author 'Bob & Co'
 description 'Doorbell'
-version '1.0.1'
+version '2.0.0'
   
 shared_scripts {
   '@ox_lib/init.lua',
