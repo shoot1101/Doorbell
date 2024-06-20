@@ -26,8 +26,8 @@ Config.Bells = {
         job = 'police'  -- Enter job name here
     },
     {
-        coords = vec3(431.53, -985.4, 30.73),  -- Enter bell position 
-        bellcoords = vec3(431.63, -985.2, 30.73),  -- Doorbell prop position
+        coords = vec3(300.2, -581.32, 42.36),  -- Enter bell position 
+        bellcoords = vec3(300.2, -581.32, 42.36),  -- Doorbell prop position
         heading = 270.0,  --Props angle
         job = 'ambulance'  -- Enter job name here
     },
